@@ -1,0 +1,3 @@
+1. sekcija stats padding bottom tehnika, scalable krug
+2. sekcija pricing scalable padding linka ili neko drugo resenje??
+3. sekcija contact mozda resenje sa width u % ili max width ili min width

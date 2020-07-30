@@ -1,0 +1,118 @@
+.pricing {
+    min-height: 1018px;
+    padding: 120px 0;
+    background-color: $bc;
+    text-align: center;
+}
+.pricing-title {
+    padding-bottom: 30px;
+    font-family: $font2;
+    font-size: 75px;
+    line-height: 85px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    color: $white;
+}
+.pricing-text {
+    width: 55%;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: $white;
+}
+.pricing-cards {
+    font-size: 0;
+}
+.pricing-item {
+    padding: 0 60px;
+    padding-bottom: 43px;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+}
+.pricing-wrap {
+    padding-top: 32px;
+    padding-bottom: 43px;
+    border-radius: 10px;
+    background-color: $white;
+}
+.pricing-item-title,
+.pricing-item-price {
+    font-family: $font2;
+    font-size: 37px;
+    line-height: 47px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $text;
+}
+.pricing-item-badge {
+    padding-top: 15px;
+    padding-bottom: 52px;
+}
+.pricing-item-badge svg {
+    fill: $text;
+    height: 125px;
+}
+.pricing-item-text {
+    padding-bottom: 47px;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 400;
+    color: $text;
+}
+.pricing-link {
+    padding: 12px 73px;
+    border-radius: 4px;
+    font-family: $font2;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $text;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+@include breakpoint(tablet) {
+    .pricing {
+        padding-bottom: 25px;
+    }
+    .pricing-text {
+        width: 100%;
+    }
+    .pricing-item {
+        padding: 0 15px;
+        padding-bottom: 43px;
+        width: 50%;
+    }
+    .pricing-link {
+        padding: 12px 58px;
+    }
+}
+
+@include breakpoint(phone) {
+    .pricing {
+        padding-bottom: 25px;
+    }
+    .pricing-text {
+        width: 100%;
+    }
+    .pricing-item {
+        padding: 0 15px;
+        padding-bottom: 43px;
+        width: 100%;
+        display: block;
+    }
+    .pricing-link {
+        padding: 12px 49px;
+    }
+}

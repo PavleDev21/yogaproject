@@ -1,0 +1,84 @@
+.instructor {
+    height: 1018px;
+    background-color: $bc;
+    font-size: 0;
+}
+.instructor-general {
+    padding: 303px 75px;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+.instructor-img {
+    @extend %bc-img;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+}
+.instructor-title {
+    padding-bottom: 5px;
+    width: 60%;
+    font-family: $font2;
+    font-size: 75px;
+    line-height: 85px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $white;
+}
+.instructor-text {
+    padding-bottom: 70px;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: $white;
+}
+.instructor-link {
+    padding: 15px 100px;
+    border-radius: 5px;
+    font-family: $font2;
+    font-size: 23px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text;
+    background-color: $white;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+@include breakpoint(tablet) {
+    .instructor-general {
+        display: block;
+        width: 100%;
+    }
+    .instructor-img {
+        display: none;
+    }
+}
+
+@include breakpoint(phone) {
+    .instructor {
+        height: auto;
+        min-height: 540px;
+        text-align: center;
+    }
+    .instructor-general {
+        padding: 120px 20px 140px 20px;
+        display: block;
+        width: 100%;
+    }
+    .instructor-title {
+        width: 100%;
+        font-size: 57px;
+        line-height: 67px;
+    }
+    .instructor-img {
+        display: none;
+    }
+}

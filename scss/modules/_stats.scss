@@ -1,0 +1,103 @@
+.stats {
+    min-height: 1018px;
+    padding: 120px 0;
+    text-align: center;
+    @extend %bc-img;
+}
+.stats-title {
+    padding-bottom: 35px;
+    font-family: $font2;
+    font-size: 75px;
+    line-height: 75px;
+    font-weight: 800;
+    color: $text;
+    text-transform: uppercase;
+}
+.stats-text {
+    width: 55%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: $text;
+}
+.stats-cards {
+    font-size: 0;
+    margin-top: 250px;
+}
+.stats-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 66%;
+        padding-bottom: 66%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid $text;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+.stats-item-number {
+    padding-bottom: 9px;
+    font-family: $font2;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 800;
+    color: $text;
+}
+.stats-item-text {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+    color: $text;
+}
+
+@include breakpoint(tablet) {
+    .stats-text {
+        width: 100%;
+    }
+    .stats-cards {
+        margin-top: 100px;
+    }
+    .stats-item {
+        width: 50%;
+        padding: 55px;
+        &::after {
+            width: 76%;
+            padding-bottom: 76%;
+        }
+    }
+    .stats-item-text {
+        width: 65%;
+    }
+}
+
+@include breakpoint(phone) {
+    .stats-text {
+        width: 100%;
+    }
+    .stats-cards {
+        margin-top: 100px;
+    }
+    .stats-item {
+        width: 100%;
+        padding: 95px 0;
+        &::after {
+            top: 45%;
+            width: 85%;
+            padding-bottom: 85%;
+        }
+    }
+    .stats-item-text {
+        width: 65%;
+    }
+}

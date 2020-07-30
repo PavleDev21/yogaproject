@@ -1,0 +1,31 @@
+//config
+@import 'config/reset';
+@import 'config/variables';
+
+//helpers
+@import 'helpers/helpers';
+
+//base
+@import 'base/fonts';
+@import 'base/breakpoints';
+
+//layout
+@import 'layout/layout';
+
+//plugins
+
+
+//modules
+@import 'modules/banner';
+@import 'modules/class';
+@import 'modules/stats';
+@import 'modules/instructor';
+@import 'modules/experience';
+@import 'modules/pricing';
+@import 'modules/trainer';
+@import 'modules/contact';
+
+//shared
+@import 'shared/header';
+@import 'shared/footer';
+@import 'shared/main';

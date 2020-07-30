@@ -1,0 +1,1550 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1510px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.shape-src, .banner-img-src, .class-shape-src, .class-img-src, .stats, .instructor-img, .experience-img-src, .trainer, .trainer-shape-src, .trainer-img-src {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-BoldItalic.eot");
+  src: url("assets/fonts/Montserrat-BoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-BoldItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-BoldItalic.woff") format("woff"), url("assets/fonts/Montserrat-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-Medium.eot");
+  src: url("assets/fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("assets/fonts/Montserrat-Medium.woff") format("woff"), url("assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Bhai 2';
+  src: url("assets/fonts/BalooBhai2-Medium.eot");
+  src: url("assets/fonts/BalooBhai2-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/BalooBhai2-Medium.woff2") format("woff2"), url("assets/fonts/BalooBhai2-Medium.woff") format("woff"), url("assets/fonts/BalooBhai2-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-Black.eot");
+  src: url("assets/fonts/Montserrat-Black.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-Black.woff2") format("woff2"), url("assets/fonts/Montserrat-Black.woff") format("woff"), url("assets/fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-ExtraLight.eot");
+  src: url("assets/fonts/Montserrat-ExtraLight.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("assets/fonts/Montserrat-ExtraLight.woff") format("woff"), url("assets/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-SemiBold.eot");
+  src: url("assets/fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("assets/fonts/Montserrat-SemiBold.woff") format("woff"), url("assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Bhai 2';
+  src: url("assets/fonts/BalooBhai2-Regular.eot");
+  src: url("assets/fonts/BalooBhai2-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/BalooBhai2-Regular.woff2") format("woff2"), url("assets/fonts/BalooBhai2-Regular.woff") format("woff"), url("assets/fonts/BalooBhai2-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-LightItalic.eot");
+  src: url("assets/fonts/Montserrat-LightItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-LightItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-LightItalic.woff") format("woff"), url("assets/fonts/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-ExtraLightItalic.eot");
+  src: url("assets/fonts/Montserrat-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-ExtraLightItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-ExtraLightItalic.woff") format("woff"), url("assets/fonts/Montserrat-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-Regular.eot");
+  src: url("assets/fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-Regular.woff2") format("woff2"), url("assets/fonts/Montserrat-Regular.woff") format("woff"), url("assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-Bold.eot");
+  src: url("assets/fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-Bold.woff2") format("woff2"), url("assets/fonts/Montserrat-Bold.woff") format("woff"), url("assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-SemiBoldItalic.eot");
+  src: url("assets/fonts/Montserrat-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("assets/fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-ExtraBoldItalic.eot");
+  src: url("assets/fonts/Montserrat-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-ExtraBoldItalic.woff") format("woff"), url("assets/fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-Italic.eot");
+  src: url("assets/fonts/Montserrat-Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-Italic.woff2") format("woff2"), url("assets/fonts/Montserrat-Italic.woff") format("woff"), url("assets/fonts/Montserrat-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-ThinItalic.eot");
+  src: url("assets/fonts/Montserrat-ThinItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-ThinItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-ThinItalic.woff") format("woff"), url("assets/fonts/Montserrat-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Bhai 2';
+  src: url("assets/fonts/BalooBhai2-ExtraBold.eot");
+  src: url("assets/fonts/BalooBhai2-ExtraBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/BalooBhai2-ExtraBold.woff2") format("woff2"), url("assets/fonts/BalooBhai2-ExtraBold.woff") format("woff"), url("assets/fonts/BalooBhai2-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-Thin.eot");
+  src: url("assets/fonts/Montserrat-Thin.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-Thin.woff2") format("woff2"), url("assets/fonts/Montserrat-Thin.woff") format("woff"), url("assets/fonts/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-MediumItalic.eot");
+  src: url("assets/fonts/Montserrat-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-MediumItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-MediumItalic.woff") format("woff"), url("assets/fonts/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-BlackItalic.eot");
+  src: url("assets/fonts/Montserrat-BlackItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-BlackItalic.woff2") format("woff2"), url("assets/fonts/Montserrat-BlackItalic.woff") format("woff"), url("assets/fonts/Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Bhai 2';
+  src: url("assets/fonts/Bassets/fonts/alooBhai2-SemiBold.eot");
+  src: url("assets/fonts/BalooBhai2-SemiBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/BalooBhai2-SemiBold.woff2") format("woff2"), url("assets/fonts/BalooBhai2-SemiBold.woff") format("woff"), url("assets/fonts/BalooBhai2-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-ExtraBold.eot");
+  src: url("assets/fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("assets/fonts/Montserrat-ExtraBold.woff") format("woff"), url("assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baloo Bhai 2';
+  src: url("assets/fonts/BalooBhai2-Bold.eot");
+  src: url("assets/fonts/BalooBhai2-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/BalooBhai2-Bold.woff2") format("woff2"), url("assets/fonts/BalooBhai2-Bold.woff") format("woff"), url("assets/fonts/BalooBhai2-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("assets/fonts/Montserrat-Light.eot");
+  src: url("assets/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Montserrat-Light.woff2") format("woff2"), url("assets/fonts/Montserrat-Light.woff") format("woff"), url("assets/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+.body {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.banner {
+  max-height: 843px;
+  padding: 65px 0;
+}
+
+.banner-content {
+  font-size: 0;
+}
+
+.banner-image-div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.banner-general {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.banner-title {
+  padding-bottom: 8px;
+  color: #6c9894;
+  font-family: "Baloo Bhai 2";
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.banner-text {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 28px;
+  color: #6c9894;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+  font-weight: 400;
+}
+
+.banner-link {
+  padding: 0px 28px;
+  border-radius: 9px;
+  font-family: "Baloo Bhai 2";
+  color: #fff;
+  background-color: #6c9894;
+  font-size: 17px;
+  line-height: 17px;
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.banner-link:hover {
+  opacity: 0.8;
+}
+
+.shape {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.shape-src {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-img {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.banner-img-src {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/*.banner-img {
+    background-color: $ocean-blue;
+    border-radius: 50%;
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-image-div {
+    display: none;
+  }
+  .banner-general {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .banner-image-div {
+    display: none;
+  }
+  .banner-general {
+    width: 100%;
+  }
+  .banner-text {
+    width: 100%;
+  }
+}
+
+.class {
+  min-height: 1018px;
+  background-color: #6c9894;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.class-title {
+  padding-bottom: 35px;
+  font-family: "Baloo Bhai 2";
+  font-size: 75px;
+  line-height: 75px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.class-text {
+  width: 55%;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.class-cards {
+  font-size: 0;
+}
+
+.class-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+}
+
+.class-shape {
+  position: relative;
+  padding-bottom: 100%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.class-shape-src {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.class-img {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.class-img-src {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.class-item-title {
+  margin-top: -25px;
+  padding-bottom: 22px;
+  font-family: "Baloo Bhai 2";
+  font-size: 37px;
+  line-height: 37px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.class-item-text {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .class-text {
+    width: 100%;
+  }
+  .class-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .class-text {
+    width: 100%;
+  }
+  .class-item {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.stats {
+  min-height: 1018px;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.stats-title {
+  padding-bottom: 35px;
+  font-family: "Baloo Bhai 2";
+  font-size: 75px;
+  line-height: 75px;
+  font-weight: 800;
+  color: #6c9894;
+  text-transform: uppercase;
+}
+
+.stats-text {
+  width: 55%;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #6c9894;
+}
+
+.stats-cards {
+  font-size: 0;
+  margin-top: 250px;
+}
+
+.stats-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+}
+
+.stats-item::after {
+  content: '';
+  position: absolute;
+  width: 66%;
+  padding-bottom: 66%;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 4px solid #6c9894;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.stats-item-number {
+  padding-bottom: 9px;
+  font-family: "Baloo Bhai 2";
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 800;
+  color: #6c9894;
+}
+
+.stats-item-text {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #6c9894;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .stats-text {
+    width: 100%;
+  }
+  .stats-cards {
+    margin-top: 100px;
+  }
+  .stats-item {
+    width: 50%;
+    padding: 55px;
+  }
+  .stats-item::after {
+    width: 76%;
+    padding-bottom: 76%;
+  }
+  .stats-item-text {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .stats-text {
+    width: 100%;
+  }
+  .stats-cards {
+    margin-top: 100px;
+  }
+  .stats-item {
+    width: 100%;
+    padding: 95px 0;
+  }
+  .stats-item::after {
+    top: 45%;
+    width: 85%;
+    padding-bottom: 85%;
+  }
+  .stats-item-text {
+    width: 65%;
+  }
+}
+
+.instructor {
+  height: 1018px;
+  background-color: #6c9894;
+  font-size: 0;
+}
+
+.instructor-general {
+  padding: 303px 75px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.instructor-img {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 100%;
+}
+
+.instructor-title {
+  padding-bottom: 5px;
+  width: 60%;
+  font-family: "Baloo Bhai 2";
+  font-size: 75px;
+  line-height: 85px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.instructor-text {
+  padding-bottom: 70px;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.instructor-link {
+  padding: 15px 100px;
+  border-radius: 5px;
+  font-family: "Baloo Bhai 2";
+  font-size: 23px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6c9894;
+  background-color: #fff;
+}
+
+.instructor-link:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .instructor-general {
+    display: block;
+    width: 100%;
+  }
+  .instructor-img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .instructor {
+    height: auto;
+    min-height: 540px;
+    text-align: center;
+  }
+  .instructor-general {
+    padding: 120px 20px 140px 20px;
+    display: block;
+    width: 100%;
+  }
+  .instructor-title {
+    width: 100%;
+    font-size: 57px;
+    line-height: 67px;
+  }
+  .instructor-img {
+    display: none;
+  }
+}
+
+.experience {
+  height: 1018px;
+  background-color: #fff;
+  font-size: 0;
+}
+
+.experience-general {
+  padding: 303px 75px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.experience-title {
+  padding-bottom: 5px;
+  width: 60%;
+  font-family: "Baloo Bhai 2";
+  font-size: 75px;
+  line-height: 85px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #6c9894;
+}
+
+.experience-text {
+  padding-bottom: 70px;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #6c9894;
+}
+
+.experience-link {
+  padding: 15px 100px;
+  border-radius: 5px;
+  font-family: "Baloo Bhai 2";
+  font-size: 23px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6c9894;
+}
+
+.experience-link:hover {
+  opacity: 0.6;
+}
+
+.experience-image-div {
+  padding: 100px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  height: 100%;
+}
+
+.experience-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding-bottom: 73%;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+.experience-img-src {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .experience-image-div {
+    display: none;
+  }
+  .experience-general {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .experience {
+    height: auto;
+    min-height: 540px;
+    text-align: center;
+  }
+  .experience-general {
+    padding: 120px 20px 140px 20px;
+    display: block;
+    width: 100%;
+  }
+  .experience-title {
+    width: 100%;
+    font-size: 57px;
+    line-height: 67px;
+  }
+  .experience-image-div {
+    display: none;
+  }
+}
+
+.pricing {
+  min-height: 1018px;
+  padding: 120px 0;
+  background-color: #6c9894;
+  text-align: center;
+}
+
+.pricing-title {
+  padding-bottom: 30px;
+  font-family: "Baloo Bhai 2";
+  font-size: 75px;
+  line-height: 85px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.pricing-text {
+  width: 55%;
+  margin: 0 auto;
+  padding-bottom: 45px;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.pricing-cards {
+  font-size: 0;
+}
+
+.pricing-item {
+  padding: 0 60px;
+  padding-bottom: 43px;
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+}
+
+.pricing-wrap {
+  padding-top: 32px;
+  padding-bottom: 43px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.pricing-item-title,
+.pricing-item-price {
+  font-family: "Baloo Bhai 2";
+  font-size: 37px;
+  line-height: 47px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #6c9894;
+}
+
+.pricing-item-badge {
+  padding-top: 15px;
+  padding-bottom: 52px;
+}
+
+.pricing-item-badge svg {
+  fill: #6c9894;
+  height: 125px;
+}
+
+.pricing-item-text {
+  padding-bottom: 47px;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #6c9894;
+}
+
+.pricing-link {
+  padding: 12px 73px;
+  border-radius: 4px;
+  font-family: "Baloo Bhai 2";
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6c9894;
+}
+
+.pricing-link:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .pricing {
+    padding-bottom: 25px;
+  }
+  .pricing-text {
+    width: 100%;
+  }
+  .pricing-item {
+    padding: 0 15px;
+    padding-bottom: 43px;
+    width: 50%;
+  }
+  .pricing-link {
+    padding: 12px 58px;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .pricing {
+    padding-bottom: 25px;
+  }
+  .pricing-text {
+    width: 100%;
+  }
+  .pricing-item {
+    padding: 0 15px;
+    padding-bottom: 43px;
+    width: 100%;
+    display: block;
+  }
+  .pricing-link {
+    padding: 12px 49px;
+  }
+}
+
+.trainer {
+  padding: 20px 0;
+  min-height: 772px;
+  text-align: center;
+}
+
+.trainer-shape {
+  margin: 0 auto;
+  position: relative;
+  width: 35%;
+  padding-bottom: 35%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.trainer-shape-src {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trainer-img {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.trainer-img-src {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.trainer-text {
+  padding-bottom: 47px;
+  font-size: 58px;
+  line-height: 65px;
+  font-weight: 400;
+  color: #6c9894;
+}
+
+.trainer-title {
+  padding-bottom: 50px;
+  font-family: "Baloo Bhai 2";
+  font-size: 58px;
+  line-height: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #6c9894;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .trainer-shape {
+    width: 45%;
+    padding-bottom: 45%;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .trainer-shape {
+    width: 80%;
+    padding-bottom: 80%;
+  }
+  .trainer-text {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+.contact {
+  padding: 120px 0;
+  min-height: 643px;
+  background-color: #6c9894;
+  text-align: center;
+}
+
+.contact-title {
+  padding-bottom: 30px;
+  font-family: "Baloo Bhai 2";
+  font-size: 75px;
+  line-height: 85px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-text {
+  width: 53%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.contact-text-input {
+  font-size: 25px;
+  color: #6c9894;
+  padding: 17px 200px 17px 29px;
+  border-radius: 30px 0 0 30px;
+  border: 0;
+  margin: 0;
+}
+
+.contact-text-input::-webkit-input-placeholder {
+  opacity: 0.6;
+  font-size: 25px;
+  line-height: 25px;
+  color: #6c9894;
+}
+
+.contact-text-input:-ms-input-placeholder {
+  opacity: 0.6;
+  font-size: 25px;
+  line-height: 25px;
+  color: #6c9894;
+}
+
+.contact-text-input::-ms-input-placeholder {
+  opacity: 0.6;
+  font-size: 25px;
+  line-height: 25px;
+  color: #6c9894;
+}
+
+.contact-text-input::placeholder {
+  opacity: 0.6;
+  font-size: 25px;
+  line-height: 25px;
+  color: #6c9894;
+}
+
+.contact-btn {
+  background-color: #fff;
+  color: #6c9894;
+  padding: 21px 49px 17px 55px;
+  border-radius: 0 30px 30px 0;
+  font-family: "Baloo Bhai 2";
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  margin-left: -4px;
+  border: 0;
+}
+
+.contact-btn:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact-text {
+    width: 100%;
+  }
+  .contact-text-input {
+    padding: 17px 9px 17px 29px;
+  }
+  .contact-btn {
+    padding: 21px 49px 17px 9px;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .contact-text {
+    width: 100%;
+  }
+  .contact-text-input {
+    width: 55%;
+    padding: 17px 9px 17px 17px;
+  }
+  .contact-btn {
+    padding: 21px 13px 17px 9px;
+  }
+}
+
+.header {
+  font-size: 0;
+  height: 132px;
+}
+
+.logo {
+  height: 100%;
+  text-align: right;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+}
+
+.square {
+  position: absolute;
+  height: 132px;
+  width: 108px;
+  top: 0;
+  right: -13px;
+  background-color: #a7d7c5;
+  z-index: 2;
+}
+
+.logo-link {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 3;
+}
+
+.logo-img {
+  position: relative;
+  width: 86px;
+}
+
+.navigation {
+  padding-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #e2ede8;
+  width: 90%;
+  text-align: right;
+  z-index: 1;
+}
+
+.nav-list {
+  font-size: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 20px;
+}
+
+.nav-link {
+  padding: 5px 25px;
+  color: #494f4e;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 21px;
+  font-family: "Baloo Bhai 2";
+}
+
+.nav-link:hover {
+  background-color: #c7d9d5;
+}
+
+.nav-toggle {
+  position: relative;
+  display: none;
+  width: 50px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+}
+
+.nav-toggle-icon {
+  position: absolute;
+  top: 18px;
+  left: 7px;
+  width: 35px;
+  height: 4px;
+  background-color: #6c9894;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.nav-toggle-icon::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #6c9894;
+  left: 0;
+  top: -8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+
+.nav-toggle-icon::before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #6c9894;
+  left: 0;
+  top: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    height: 100px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 5px 0px #a7d7c5;
+            box-shadow: 0px 3px 5px 0px #a7d7c5;
+    padding: 25px 0;
+  }
+  .navigation {
+    background-color: #fff;
+  }
+  .logo-link {
+    padding-left: 20px;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .square {
+    display: none;
+  }
+  .nav-item {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .body {
+    padding-top: 100px;
+  }
+  .header {
+    height: 100px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 5px 0px #a7d7c5;
+            box-shadow: 0px 3px 5px 0px #a7d7c5;
+    padding: 25px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .navigation {
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 165px;
+    background-color: #fff;
+  }
+  .nav-list {
+    display: block;
+  }
+  .nav-link:hover {
+    background-color: transparent;
+    opacity: 0.8;
+  }
+  .nav-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav-toggle {
+    display: block;
+    float: right;
+    margin-right: 40px;
+    margin-top: 4px;
+  }
+  .nav-toggle-active .nav-toggle-icon {
+    background-color: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .nav-toggle-active .nav-toggle-icon::after {
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 0;
+  }
+  .nav-toggle-active .nav-toggle-icon::before {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 0;
+  }
+  .logo-link {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .square {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+.footer {
+  min-height: 550px;
+  padding: 155px 0px;
+}
+
+.footer-content {
+  font-size: 0;
+}
+
+.footer-text {
+  padding-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.footer-about {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+}
+
+.footer-services {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+}
+
+.footer-network {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+}
+
+.footer-title, .footer-about-title,
+.footer-services-title, .footer-network-title {
+  padding-bottom: 21px;
+  color: #6c9894;
+  font-family: "Baloo Bhai 2";
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  font-weight: 800;
+}
+
+.footer-title {
+  padding-bottom: 30px;
+}
+
+.footer-about-list, .footer-services-list,
+.footer-network-list {
+  font-size: 0;
+}
+
+.footer-subtext {
+  font-size: 25px;
+  line-height: 29px;
+  color: #6c9894;
+}
+
+.footer-link {
+  display: inline-block;
+  letter-spacing: -0.5px;
+  font-size: 25px;
+  line-height: 44px;
+  color: #6c9894;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-network-link {
+  padding-left: 25px;
+}
+
+.network-icon {
+  padding: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #6c9894;
+}
+
+.network-icon svg {
+  fill: #fff;
+  height: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    padding: 65px 0px;
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .footer-text {
+    padding-right: 0;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  .footer-about {
+    width: 33.33%;
+  }
+  .footer-services {
+    width: 33.33%;
+  }
+  .footer-network {
+    width: 33.33%;
+  }
+  .network-icon {
+    display: none;
+  }
+  .footer-network-link {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .footer {
+    padding: 65px 0px;
+  }
+  .footer-content {
+    text-align: center;
+  }
+  .footer-text {
+    padding-right: 0;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  .footer-about {
+    padding: 30px 0;
+    width: 100%;
+  }
+  .footer-services {
+    padding: 30px 0;
+    width: 100%;
+  }
+  .footer-network {
+    padding: 30px 0;
+    width: 100%;
+  }
+  .network-icon {
+    display: none;
+  }
+  .footer-network-link {
+    padding-left: 0;
+  }
+}
+
+.up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-color: #6c9894;
+  opacity: 0.8;
+}
+
+.up:hover {
+  opacity: 0.4;
+}
+
+.up svg {
+  fill: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  padding-left: 5px;
+  padding-top: 4px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .up {
+    right: 20px;
+    bottom: 35px;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .up {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

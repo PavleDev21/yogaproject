@@ -1,0 +1,135 @@
+.footer {
+    min-height: 550px;
+    padding: 155px 0px;
+}
+.footer-content {
+    font-size: 0;
+}
+.footer-text {
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+.footer-about {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+.footer-services {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+.footer-network {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+.footer-title, .footer-about-title,
+.footer-services-title, .footer-network-title {
+    padding-bottom: 21px;
+    color: $text;
+    font-family: $font2;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    font-weight: 800;
+}
+.footer-title {
+    padding-bottom: 30px;
+}
+.footer-about-list, .footer-services-list,
+.footer-network-list {
+    font-size: 0;
+}
+.footer-subtext {
+    font-size: 25px;
+    line-height: 29px;
+    color: $text;
+}
+.footer-link {
+    display: inline-block;
+    letter-spacing: -0.5px;
+    font-size: 25px;
+    line-height: 44px;
+    color: $text;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.6;
+    }
+}
+.footer-network-link {
+    padding-left: 25px;
+}
+.network-icon {
+    padding: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $text;
+}
+.network-icon svg {
+    fill: $white;
+    height: 20px;
+}
+
+@include breakpoint(tablet) {
+    .footer {
+        padding: 65px 0px;
+    }
+    .footer-content {
+        text-align: center;
+    }
+    .footer-text {
+        padding-right: 0;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .footer-about {
+        width: 33.33%;
+    }
+    .footer-services {
+        width: 33.33%;
+    }
+    .footer-network {
+        width: 33.33%;
+    }
+    .network-icon {
+        display: none;
+    }
+    .footer-network-link {
+        padding-left: 0;
+    }
+}
+
+@include breakpoint(phone) {
+    .footer {
+        padding: 65px 0px;
+    }
+    .footer-content {
+        text-align: center;
+    }
+    .footer-text {
+        padding-right: 0;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+    .footer-about {
+        padding: 30px 0;
+        width: 100%;
+    }
+    .footer-services {
+        padding: 30px 0;
+        width: 100%;
+    }
+    .footer-network {
+        padding: 30px 0;
+        width: 100%;
+    }
+    .network-icon {
+        display: none;
+    }
+    .footer-network-link {
+        padding-left: 0;
+    }
+}

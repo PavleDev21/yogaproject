@@ -1,0 +1,82 @@
+.contact {
+    padding: 120px 0;
+    min-height: 643px;
+    background-color: $bc;
+    text-align: center;
+}
+.contact-title {
+    padding-bottom: 30px;
+    font-family: $font2;
+    font-size: 75px;
+    line-height: 85px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $white;
+}
+.contact-text {
+    width: 53%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    color: $white;
+}
+.contact-text-input {
+    font-size: 25px;
+    color: $text;
+    padding: 17px 200px 17px 29px;
+    border-radius: 30px 0 0 30px;
+    border: 0;
+    margin: 0;
+    &::placeholder {
+        opacity: 0.6;
+        font-size: 25px;
+        line-height: 25px;
+        color: $text;
+    }
+}
+.contact-btn {
+    background-color: $white;
+    color: $text;
+    padding: 21px 49px 17px 55px;
+    border-radius: 0 30px 30px 0;
+    font-family: $font2;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-left: -4px;
+    border: 0;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
+}
+
+@include breakpoint(tablet) {
+    .contact-text {
+        width: 100%;
+    }
+    .contact-text-input {
+        padding: 17px 9px 17px 29px;
+    }
+    .contact-btn {
+        padding: 21px 49px 17px 9px;
+    }
+}
+
+@include breakpoint(phone) {
+    .contact-text {
+        width: 100%;
+    }
+    .contact-text-input {
+        width: 55%;
+        padding: 17px 9px 17px 17px;
+    }
+    .contact-btn {
+        padding: 21px 13px 17px 9px;
+    }
+}
